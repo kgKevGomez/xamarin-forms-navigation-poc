@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:navigationDemo="clr-namespace:NavigationDemo;assembly=NavigationDemo"
+             xmlns:esri="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
+             xmlns:mapping="clr-namespace:Esri.ArcGISRuntime.Mapping;assembly=Esri.ArcGISRuntime" 
+             x:Class="NavigationDemo.MainPage">
+    <ContentPage.Resources>
+        <!-- <navigationDemo:MapViewModel x:Key="MapViewModel" /> -->
+    </ContentPage.Resources>
+    <StackLayout>
+        <Button Text="Test" Clicked="Button_Clicked" VerticalOptions="Start"></Button>
+        <Button x:Name="StartNavigationButton" Text="Start" Clicked="Button_Clicked_1" VerticalOptions="Start"></Button>
+        <esri:MapView x:Name="MainMapView"
+                      
+                      HeightRequest="800"
+                      WidthRequest="300"
+                         />
+    </StackLayout>
+
+</ContentPage>
